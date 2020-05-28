@@ -149,3 +149,9 @@ h3{
   padding: 20px;
   border-radius: 10px;
 }
+
+#copy{
+  font-size: 10px;
+  bottom: 100%;
+  right: 100%;
+}

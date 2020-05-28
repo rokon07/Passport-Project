@@ -25,7 +25,7 @@ let dob = document.querySelector('#dob');
 let email = document.querySelector('#email');
 
 const db = firestore.collection("passportData");
-//document.getElementById('submitButton').addEventListener('click', function(){
+document.getElementById('submitButton').addEventListener('click', function(){
   let firstNameInput = firstName.value;
   let lastNameInput = lastName.value;
   let dobInput = dob.value;
@@ -71,7 +71,7 @@ function notFound(){
 
 document.getElementById('getButton').addEventListener('click', function(){
   document.getElementById('getButton').addEventListener('click', $('h3').remove());
-  firestore.collection('passportData').get().then((snapshot) => {
+  //firestore.collection('passportData').get().then((snapshot) => {
     var check = false;
     snapshot.docs.forEach(doc => {
       console.log(doc.data().firstName);
